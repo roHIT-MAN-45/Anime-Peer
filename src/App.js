@@ -11,6 +11,8 @@ import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import VerifyRoute from "./Pages/VerifyRoute/VerifyRoute";
 import NotFound from "./Pages/NotFound/NotFound";
 
+// Make sure that API key🔑 of this web application is restricted so you cant use it.🎀
+
 function App() {
   return (
     <Wrapper>
