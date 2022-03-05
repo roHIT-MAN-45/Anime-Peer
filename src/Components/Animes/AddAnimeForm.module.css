@@ -1,0 +1,54 @@
+.form {
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+.control label {
+  display: block;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: var(--main-color);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.control input,
+.control textarea {
+  display: block;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 5px;
+  border: 1px solid silver;
+  padding: 0.4rem;
+  width: 100%;
+  margin-bottom: 1.7rem;
+  color: var(--text-color);
+}
+
+.actions {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.actions button {
+  font: inherit;
+  font-size: 1.3rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--main-color);
+  padding: 0.5rem 3rem;
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: var(--main-color);
+  color: var(--white-color);
+}

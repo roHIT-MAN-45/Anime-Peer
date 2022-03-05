@@ -1,0 +1,70 @@
+.item {
+  margin: 1rem 0;
+}
+
+.image {
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.content {
+  text-align: center;
+  padding: 1rem;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.content p {
+  font-size: 1rem;
+}
+
+.actions {
+  padding: 1rem;
+  text-align: center;
+}
+
+.actions svg {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.actions svg.toggel {
+  color: var(--invalid-color);
+}
+
+@media (max-width: 545px) {
+  .image {
+    height: 20rem;
+  }
+
+  .content {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .image {
+    height: 17rem;
+  }
+
+  .content {
+    padding: 0.2rem;
+  }
+}

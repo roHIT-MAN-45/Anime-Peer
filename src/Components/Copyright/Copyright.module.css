@@ -1,0 +1,16 @@
+.copy_card {
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+.copy_card p {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--para-color);
+}
+
+.copy_card p span {
+  font-weight: 600;
+  color: var(--main-color);
+}

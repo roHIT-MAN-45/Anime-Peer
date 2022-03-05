@@ -1,24 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+
+import Wrapper from "./Components/Wrapper/Wrapper";
+import AllAnimes from "./Pages/AllAnimes";
+import AddAnime from "./Pages/AddAnime";
+import Favourites from "./Pages/Favourites";
+import Login from "./Pages/Auth/Login";
+import Signup from "./Pages/Auth/Signup";
+import Profile from "./Pages/About Me/Profile";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import VerifyRoute from "./Pages/VerifyRoute/VerifyRoute";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <PrivateRoute>
+              <AllAnimes />
+            </PrivateRoute>
+          }
+          exact
+        />
+        <Route
+          exact
+          path="/anime/new"
+          element={
+            <PrivateRoute>
+              <AddAnime />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/animes/favourites"
+          element={
+            <PrivateRoute>
+              <Favourites />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/about/me"
+          element={
+            <PrivateRoute>
+              <Profile />
+            </PrivateRoute>
+          }
+        />
+        <Route path="/auth/login" element={<Login />} exact />
+        <Route path="/auth/signup" element={<Signup />} />
+        <Route path="/verify" element={<VerifyRoute />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Wrapper>
   );
 }
 
