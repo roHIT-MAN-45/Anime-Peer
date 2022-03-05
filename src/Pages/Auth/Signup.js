@@ -38,7 +38,7 @@ function Signup() {
   };
   return (
     <section>
-      <h1>Signup 🏆</h1>
+      <h1>Signup 🔒</h1>
       <Card>
         <form className={styles.form} onSubmit={signupSubmitHandler}>
           <div className={styles.control}>
