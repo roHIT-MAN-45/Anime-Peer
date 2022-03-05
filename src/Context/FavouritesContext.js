@@ -18,7 +18,7 @@ export const FavoritesContextProvider = (props) => {
 
   const removeFromFavouritesHandler = (animeId) => {
     setFavourites((prevFav) => {
-      return prevFav.filter((favAnime) => favAnime.id !== animeId);
+      return prevFav.filter((fav) => fav.id !== animeId);
     });
   };
 
