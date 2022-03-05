@@ -9,7 +9,7 @@ function Favourites() {
     <section>
       {favouritesContext.favourites.length > 0 ? (
         <h1>
-          Favourites <span className="emoji-span">❤</span>
+          Favourites<span className="emoji-span">❤</span>
         </h1>
       ) : (
         <h1>
