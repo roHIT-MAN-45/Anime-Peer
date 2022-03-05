@@ -19,6 +19,7 @@ function Profile() {
         <div className={styles.buttons}>
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.linkedin.com/in/rohitchavan110116114/"
             className={styles.primary}
           >
@@ -26,6 +27,7 @@ function Profile() {
           </a>
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.youtube.com/channel/UCCn_hk6vKrcrJCeyJBLJglA"
             className={styles.secondary}
           >
