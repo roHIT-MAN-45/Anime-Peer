@@ -46,6 +46,7 @@ export const AuthContextProvider = (props) => {
   };
 
   const logoutUser = () => {
+    setCurrentUser(null);
     return signOut(auth);
   };
 
